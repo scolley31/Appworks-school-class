@@ -1,0 +1,51 @@
+1. Try the statements below in REPL. Please answer that there are correct or not andexplain the reasons.
+
+a. ​val id = 9527
+-> correct 
+This is Integer types. All variables initalized with interger values. 
+If the initial value exceeds this value, this type is long.
+
+b. var number : Int = 5.6
+-> incorrect 
+Format is incorrect. we don't need to declare the float-point types in Kotlin. 
+Although we need to declare type when we use other language, this declaration are not correct.
+
+c. var title = "Hello Kotlin!"
+-> correct
+This strings type is correct. A string value is a sequence of characters in double quotes (" ).
+
+d. val content : String = null
+-> incorrect
+In Kotlin, to avoid NullPointerException, Null can't be save except declararion the Nullable types (?).
+
+e. val number : Double? =555.6
+-> correct
+In Kotlin, when we create a nullable number, we use (?) to stand for it. In this case, author create a nullable and Floating-point types﻿.
+
+f. var list: List<String>? listOf(null,null)
+-> incorrect
+If we have collection of elements of a nullable type, we need to modify code to List<String?>
+
+g. var list: List<String?>? = listOf("Wayne", "Chen")
+-> correct
+As previous answer, we use List<String?> to have collection of elements of a nullable type. Author add another (?) and means that both list and element of list are nullable types.
+
+h. list.size
+-> incorrect
+This size of list may is a null. To avoid this, we should use safe calls like list?.size
+
+i. list?.size
+-> correct
+We already answer it in previous question.
+
+
+2. Read the code below, choose the correct answer and explain the reason.
+-> C
+(When) defines a conditional expression mutilple and (in) define range. Because of message.length = 39, it cause condition switch to 1--39. (println("Your grace."))
+
+3. Read the code below, choose the correct answer and explain the reason.
+-> D
+pow function can help us to calculate the power of number. For example, 10.0.pow(2) = 100. In this code, array  are initializate by pow function.
+Otherwise, withIndex in for loop function can present the element in array. Based on this function, the output should like this.
+
+ 
